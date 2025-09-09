@@ -1,0 +1,25 @@
+.profile-font-family {
+  font-family:
+    Rubik, Arial, Helvetica, 'Noto Sans Devanagari', 'Noto Sans CJK SC Thin', 'Noto Sans SC', 'Noto Sans Hebrew',
+    'Noto Sans Bengali', sans-serif;
+}
+.markdown * {
+  margin: 0;
+  padding: 0;
+}
+.markdown p,
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6,
+.markdown ul,
+.markdown ol,
+.markdown li,
+.markdown pre,
+.markdown code,
+.markdown blockquote {
+  margin: 0;
+  padding: 0;
+}

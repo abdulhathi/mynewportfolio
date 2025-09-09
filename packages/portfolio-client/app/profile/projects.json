@@ -1,0 +1,74 @@
+[
+  {
+    "name": "AnG & Availity Provider portal Integration:",
+    "companyName": "Molina Healthcare",
+    "dateFrom": "01/2023",
+    "dateTo": "08/2023",
+    "location": "",
+    "description": "Integrated Availity multi-payer appeals application with Molina Healthcare, enabling providers to efficiently submit and track claim appeals and coverage reevaluation requests."
+  },
+  {
+    "name": "AnG",
+    "companyName": "Molina Healthcare",
+    "dateFrom": "01/2019",
+    "dateTo": "12/2022",
+    "location": "",
+    "description": "Designed and enhanced Appeals & Grievances systems to improve case tracking, auditability, and reporting for Medicaid, Medicare, and Marketplace business lines."
+  },
+  {
+    "name": "Pursuit",
+    "companyName": "Molina Healthcare",
+    "dateFrom": "09/2014",
+    "dateTo": "03/2019",
+    "location": "",
+    "description": "Developed a clinical data platform that generated state-compliant PDF records and securely transmitted them via RightFax, improving provider access to member clinical information."
+  },
+  {
+    "name": "Utilization Management",
+    "companyName": "Molina Healthcare",
+    "dateFrom": "03/2013",
+    "dateTo": "12/2017",
+    "location": "",
+    "description": "Built a web-based workflow system supporting Prior Authorization, Case Management, Pharmacy, and Behavioral Health operations across multiple health plans."
+  },
+  {
+    "name": "New Client Implementation",
+    "companyName": "TMGHealth",
+    "dateFrom": "03/2012",
+    "dateTo": "02/2013",
+    "location": "",
+    "description": "Led development of Medicare/Medicaid data extracts, operational reports, and CMS-compliant interface programs during onboarding of new health plan clients."
+  },
+  {
+    "name": "IMServ EDV Solution",
+    "companyName": "",
+    "dateFrom": "04/2011",
+    "dateTo": "02/2012",
+    "location": "",
+    "description": "Delivered energy data management solutions enabling organizations to reduce energy costs, control carbon emissions, and improve sustainability reporting."
+  },
+  {
+    "name": "Patient Inquiry Application (PIA) & Patient Portals",
+    "companyName": "MedData",
+    "dateFrom": "04/2010",
+    "dateTo": "03/2011",
+    "location": "",
+    "description": "Built Silverlight and ASP.NET web applications for patient demographic lookups, payment tracking, and self-service portals to improve patient engagement."
+  },
+  {
+    "name": "Lorenzo Patient record systems",
+    "companyName": "DXC Technology",
+    "dateFrom": "05/2008",
+    "dateTo": "04/2010",
+    "location": "",
+    "description": "Contributed to one of the world’s leading healthcare information management systems, supporting clinicians and patients with integrated, patient-centered care solutions."
+  },
+  {
+    "name": "Coopslimited, Alipes & kothattai, Web App",
+    "companyName": "Sysmix Infotech Pvt. Ltd.",
+    "dateFrom": "12/2006",
+    "dateTo": "05/2008",
+    "location": "",
+    "description": "Developed multiple web and kiosk applications, including: \n * CoopsLimited.com : A business vetting platform ensuring trusted service providers. \n * Alipes Kiosk : A touch-based foot treatment and shoe customization solution. \n * Kothattai.com : An online vehicle movement system for managing fleets and logistics."
+  }
+]
