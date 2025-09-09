@@ -1,0 +1,22 @@
+[
+  {
+    "name": "GitHub",
+    "link": "https://github.com/abdulhathi",
+    "icon": "FaSquareGithub"
+  },
+  {
+    "name": "LeetCode",
+    "link": "https://leetcode.com/u/abdulhathi/",
+    "icon": "SiLeetcode"
+  },
+  {
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/abdulhathi/",
+    "icon": "FaLinkedin"
+  },
+  {
+    "name": "Portfolio",
+    "link": "http://www.abdulhathi.com",
+    "icon": "BsFillBriefcaseFill"
+  }
+]

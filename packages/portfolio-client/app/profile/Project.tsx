@@ -14,20 +14,15 @@ type ProjectProps = PropsWithChildren & {
 }
 const Project = ({ name, companyName, dateFrom, dateTo, location, description }: ProjectProps) => {
   return (
-    <div className="prose">
-      <div className="text-[14px] uppercase">{name}</div>
-      {/* <Headline fontSize={14}>{companyName}</Headline> */}
+    <div className="prose flex flex-col gap-1 leading-4">
+      <div className="text-[13px] uppercase">{name}</div>
       <div className="flex flex-row gap-1">
         <div className="flex flex-row gap-1 items-center">
-          <FaCalendarAlt className="text-gray-500" />
+          <FaCalendarAlt className="text-gray-700 w-2.5" />
           <div className="text-[12px]">{`${dateFrom} - ${dateTo}`}</div>
         </div>
-        {/* <div className="flex flex-row gap-1 items-center">
-          <FaLocationDot className="text-gray-400" />
-          <div className="text-[12px]">{location}</div>
-        </div> */}
       </div>
-      <div className="text-[11px] pl-2 m-0 leading-4 markdown">
+      <div className="text-[11px] m-0 leading-4 markdown">
         <Markdown>{description}</Markdown>
       </div>
     </div>

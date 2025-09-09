@@ -1,5 +1,13 @@
 [
   {
+    "name": "My Medidata",
+    "companyName": "Medidata Solutions",
+    "dateFrom": "09/2023",
+    "dateTo": "Present",
+    "location": "",
+    "description": "Implemented patient onboarding and setup within the myMedidata portal, enabling automated and simplified reimbursements and stipends for clinical trial participants. Enhanced patient experience by streamlining compensation for travel, childcare, meals, lost wages, and mileage directly through their myMedidata accounts."
+  },
+  {
     "name": "AnG & Availity Provider portal Integration:",
     "companyName": "Molina Healthcare",
     "dateFrom": "01/2023",
@@ -69,6 +77,6 @@
     "dateFrom": "12/2006",
     "dateTo": "05/2008",
     "location": "",
-    "description": "Developed multiple web and kiosk applications, including: \n * CoopsLimited.com : A business vetting platform ensuring trusted service providers. \n * Alipes Kiosk : A touch-based foot treatment and shoe customization solution. \n * Kothattai.com : An online vehicle movement system for managing fleets and logistics."
+    "description": "Developed multiple web and kiosk applications, including: \n   * CoopsLimited.com : A business vetting platform ensuring trusted service providers. \n - Alipes Kiosk : A touch-based foot treatment and shoe customization solution. \n   * Kothattai.com : An online vehicle movement system for managing fleets and logistics."
   }
 ]
