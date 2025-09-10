@@ -1,5 +1,4 @@
 import classnames from 'classnames'
-import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts'
 
 const activities = [
   { name: 'Coding & Development', value: 70 },
@@ -12,7 +11,7 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
 
 const MyTime = () => {
   return (
-    <div className="flex flex-col gap-1 text-[12px]">
+    <div className="grid grid-cols-2 gap-1 text-[12px]">
       <div className="flex gap-2 items-center">
         <div className={classnames('w-3', 'h-3', `bg-[#0088FE]`)} />
         <p>Coding & Development - 70%</p>

@@ -68,7 +68,7 @@
         "experience": 0
       },
       {
-        "skillName": "HTML",
+        "skillName": "HTML-5",
         "experience": 0
       },
       {
@@ -85,6 +85,10 @@
       },
       {
         "skillName": "Redux",
+        "experience": 0
+      },
+      {
+        "skillName": "Bundlers(Bun, Vite, Webpack)",
         "experience": 0
       }
     ]
@@ -197,7 +201,7 @@
     ]
   },
   {
-    "skillGroupTitle": "Database & Cloud",
+    "skillGroupTitle": "Database, ORM & Cloud",
     "skills": [
       {
         "skillName": "MSSQL",
@@ -209,6 +213,10 @@
       },
       {
         "skillName": "MySQL",
+        "experience": 0
+      },
+      {
+        "skillName": "Prisma ORM",
         "experience": 0
       },
       {

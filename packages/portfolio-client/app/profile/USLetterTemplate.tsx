@@ -5,7 +5,7 @@ type USLetterTemplateProps = PropsWithChildren & {
   className?: string
 }
 const USLetterTemplate = ({ children, className = '' }: USLetterTemplateProps) => {
-  return <div className={`w-[816px] h-[1056px] ${className}`}>{children}</div>
+  return <div className={`w-[816px] h-[1026px] ${className}`}>{children}</div>
 }
 
 export default USLetterTemplate

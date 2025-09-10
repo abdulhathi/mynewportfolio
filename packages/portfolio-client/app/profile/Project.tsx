@@ -14,15 +14,15 @@ type ProjectProps = PropsWithChildren & {
 }
 const Project = ({ name, companyName, dateFrom, dateTo, location, description }: ProjectProps) => {
   return (
-    <div className="prose flex flex-col gap-1 leading-4">
-      <div className="text-[13px] uppercase">{name}</div>
+    <div className="prose flex flex-col gap-0 leading-4">
+      <div className="text-[12px] uppercase">{name}</div>
       <div className="flex flex-row gap-1">
         <div className="flex flex-row gap-1 items-center">
           <FaCalendarAlt className="text-gray-700 w-2.5" />
           <div className="text-[12px]">{`${dateFrom} - ${dateTo}`}</div>
         </div>
       </div>
-      <div className="text-[11px] m-0 leading-4 markdown">
+      <div className="text-[11px] leading-4 markdown">
         <Markdown>{description}</Markdown>
       </div>
     </div>

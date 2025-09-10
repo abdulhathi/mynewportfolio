@@ -19,7 +19,7 @@ const Course = ({ name, link, date, issuer }: CourseProps) => {
         <FaCalendarAlt className="text-gray-500 w-2.5" />
         <div>{date}</div>
       </div>
-      {issuer && <div className="text-[12px] uppercase">{issuer}</div>}
+      {issuer && <div className="text-[12px]">{issuer}</div>}
     </div>
   )
 }
