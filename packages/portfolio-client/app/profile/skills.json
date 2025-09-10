@@ -294,11 +294,15 @@
     "skillGroupTitle": "Testing & DevOps Tools",
     "skills": [
       {
-        "skillName": "React Testing Library",
+        "skillName": "React Testing Library (JEST)",
         "experience": 0
       },
       {
-        "skillName": "JEST",
+        "skillName": "Unit testing",
+        "experience": 0
+      },
+      {
+        "skillName": "End to End(E2E) testing",
         "experience": 0
       },
       {

@@ -7,7 +7,7 @@
     "location": "Ross, United States",
     "summaryPoints": [
       "Designed and implemented **React + Redux front-end applications** with responsive support for iOS and Android, improving UX and reducing page load time by **30%.**",
-      "Built **scalable backend APIs with Ruby on Rails**, integrating secure internal Medidata system and third-party vendor APIs.",
+      "Built **scalable backend APIs with Node.js and Ruby on Rails**, integrating secure internal Medidata system and third-party vendor APIs.",
       "Led **unit and E2E testing strategy** using Jest, Cypress, and Cucumber, ensuring **98%+ code coverage.**",
       "Collaborated with cross-functional teams to resolve high-priority issues, reducing bug backlog by 50%.",
       "Skilled in **AI & ML technologies** including Python, NumPy, Pandas, Matplotlib, BeautifulSoup, Jupyter Notebook, **LLMs, Prompt Engineering, and RAG**."
@@ -20,8 +20,9 @@
     "dateTo": "08/2023",
     "location": "Long Beach, United States",
     "summaryPoints": [
-      "Architected and developed **enterprise-scale applications** using .NET, Python, React, and Azure, driving performance, scalability, and reliability.",
-      "Designed and delivered **mission-critical REST APIs** for healthcare systems, achieving **99.99% uptime** and seamless third-party integrations that reduced development time by **35%.**",
+      "Architected and developed **enterprise-scale applications** leveraging **.NET, React, Node.js and Azure** enhancing performance, scalability, and reliability.",
+      "Designed and delivered **mission-critical REST APIs** (.NET and Node.js) for healthcare systems, achieving **99.99% uptime** and seamless third-party integrations that reduced development time by **35%.**",
+      "Strong hands-on programming expertise in **Python, JavaScript, TypeScript and C#**, applying best practices for maintainable and high-quality code.",
       "Spearheaded the **migration of monolithic applications to cloud-based microservices (Azure, AWS)**, cutting infrastructure costs by **25%.**",
       "Collaborated with cross-functional teams (PMs, QA, clients) to resolve technical issues and ensure timely project delivery.",
       "Mentored and coached engineers, increasing **team velocity by 20%** and **onboarding speed by 30%**.",
