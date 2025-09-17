@@ -6,7 +6,7 @@ const Header = () => {
       <nav className="flex gap-4">
         <Link to="/">Home</Link>
         <Link to="/profile">Summary</Link>
-        <Link to="/profile">Experience</Link>
+        <Link to="/skills">Skills</Link>
       </nav>
     </header>
   )

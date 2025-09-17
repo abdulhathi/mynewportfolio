@@ -1,4 +1,3 @@
-import React from 'react'
 import Headline from './Headline'
 
 type TechnicalSkill = {
@@ -15,7 +14,7 @@ const SkillGroup = ({ skillGroupTitle, skills }: SkillGroupProps) => {
   return (
     <div>
       <Headline fontSize={14}>{skillGroupTitle}</Headline>
-      <p className='text-[12px]'>{skills.map((skill) => skill.skillName).join(', ')}</p>
+      <p className="text-[12px]">{skills.map((skill) => skill.skillName).join(', ')}</p>
     </div>
   )
 }

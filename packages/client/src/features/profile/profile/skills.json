@@ -88,6 +88,14 @@
         "experience": 0
       },
       {
+        "skillName": "Axios",
+        "experience": 0
+      },
+      {
+        "skillName": "Tanstack",
+        "experience": 0
+      },
+      {
         "skillName": "Bundlers(Bun, Vite, Webpack)",
         "experience": 0
       }
@@ -96,6 +104,18 @@
   {
     "skillGroupTitle": "Backend & Frameworks",
     "skills": [
+      {
+        "skillName": "Node.js",
+        "experience": 0
+      },
+      {
+        "skillName": "Mongoose",
+        "experience": 0
+      },
+      {
+        "skillName": "Express",
+        "experience": 0
+      },
       {
         "skillName": "ASP.NET",
         "experience": 0
@@ -122,10 +142,6 @@
       },
       {
         "skillName": "Ruby on Rails",
-        "experience": 0
-      },
-      {
-        "skillName": "Node.js",
         "experience": 0
       }
     ]
@@ -221,6 +237,10 @@
       },
       {
         "skillName": "NoSQL",
+        "experience": 0
+      },
+      {
+        "skillName": "MongoDB",
         "experience": 0
       },
       {
