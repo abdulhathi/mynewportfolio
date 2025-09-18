@@ -1,6 +1,7 @@
 import React from 'react'
 import type { StrengthProps } from './Strength'
 import Strength from './Strength'
+import Divider from './Divider'
 
 type StrengthsProps = {
   strengths: StrengthProps[]
@@ -11,7 +12,7 @@ const Strengths = ({ strengths }: StrengthsProps) => {
       {strengths.map((strength, index) => (
         <div key={index} className="flex flex-col gap-0">
           <Strength {...strength} />
-          {index < strengths.length - 1 && <div className="h-0.25 w-full bg-gray-200"></div>}
+          {index < strengths.length - 1 && <Divider />}
         </div>
       ))}
     </div>

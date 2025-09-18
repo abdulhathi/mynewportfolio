@@ -1,7 +1,7 @@
 [
   {
     "designation": "Senior Application Engineer",
-    "companyName": "Medidata",
+    "companyName": "Medidata Solutions",
     "dateFrom": "09/2023",
     "dateTo": "Present",
     "location": "Ross, United States",
@@ -16,7 +16,7 @@
   },
   {
     "designation": "Technical Lead",
-    "companyName": "Cognizant",
+    "companyName": "Cognizant (Molina Healthcare, TMG Health & MedData)",
     "dateFrom": "04/2010",
     "dateTo": "08/2023",
     "location": "Long Beach, United States",
@@ -32,12 +32,12 @@
   },
   {
     "designation": "Software Engineer",
-    "companyName": "DXC Technology",
+    "companyName": "DXC Technology (CSC)",
     "dateFrom": "05/2008",
     "dateTo": "04/2010",
     "location": "Chennai, India",
     "summaryPoints": [
-      "Developed scalable **ASP.NET, C#, JavaScript & SQL** applications for enterprise clients.",
+      "Developed scalable **.NET, C#, JavaScript & SQL** applications for enterprise clients.",
       "Designed and optimized database schemas, improving query performance by **40%.**"
     ]
   },

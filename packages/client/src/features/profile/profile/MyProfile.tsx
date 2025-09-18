@@ -2,7 +2,7 @@ import { FaLinkedin, FaPhone } from 'react-icons/fa'
 import Headline from './Headline'
 import USLetterTemplate from './USLetterTemplate'
 import './myprofile.css'
-import { MdAlternateEmail } from 'react-icons/md'
+import { MdAlternateEmail, MdAssuredWorkload } from 'react-icons/md'
 import { SiLeetcode } from 'react-icons/si'
 import { FaLocationDot } from 'react-icons/fa6'
 import SectionTitle from './SectionTitle'
@@ -25,7 +25,8 @@ import summaries from './summary.json'
 import Strengths from './Strengths'
 import Markdown from 'react-markdown'
 import { useReactToPrint } from 'react-to-print'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
+import Divider from './Divider'
 
 const MyProfile = () => {
   const headlines = ['Senior Application Engineer', 'Technical Architect', 'Full-Stack Leader', 'AI/ML Innovator']
@@ -33,13 +34,25 @@ const MyProfile = () => {
   const handlePrint = useReactToPrint({
     contentRef: profileRef,
   })
+  const [scale, setScale] = useState(1.5)
   return (
     <div>
-      <button onClick={handlePrint}>Print</button>
+      <div className="flex flex-row gap-2 items-start">
+        <button onClick={handlePrint} className="border px-2 rounded cursor-pointer">
+          Print
+        </button>
+        <button className="border px-2 rounded cursor-pointer" onClick={() => setScale((s) => s + 0.1)}>
+          +
+        </button>
+        <button className="border px-2 rounded cursor-pointer" onClick={() => setScale((s) => Math.max(1, s - 0.1))}>
+          -
+        </button>
+      </div>
       <div
         ref={profileRef}
         id="content"
         className="flex flex-col items-center justify-center w-full profile-font-family"
+        style={{ transform: `scale(${scale})`, transformOrigin: 'top' }}
       >
         <USLetterTemplate className="p-8">
           <div className="flex flex-col gap-0">
@@ -80,28 +93,35 @@ const MyProfile = () => {
                         https://leetcode.com/u/abdulhathi/
                       </a>
                     </div>
-                    <div className="flex gap-1 items-center">
+                    <div className="flex gap-1 items-center font-medium">
                       <FaLocationDot className="text-[#458EF7]" />
                       28 Hayes Street, Irvine, CA - 92620
                     </div>
                   </div>
+                  <div className="flex text-[11px] gap-1 items-center font-medium">
+                    <div className="flex flex-row gap-1 items-center bg-green-600 text-white rounded-[2px] px-1 leading-4">
+                      <MdAssuredWorkload />
+                      <div className="text-[12px] text-white">Work Authorization</div>
+                    </div>
+                    Authorized to work in the U.S. (EAD valid through July 2030)
+                  </div>
                 </div>
               </div>
-              <img src={profilePhoto} width={100} className="rounded-full"></img>
+              <img src={profilePhoto} width={110} className="rounded-full"></img>
             </div>
             <div className="flex gap-4 w-full">
               <div className="w-[60%] flex flex-col gap-2">
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-1">
                   <SectionTitle children="Summary" />
                   <div className="text-[12px] leading-4">
-                    {summaries.map(({ summary }) => (
-                      <Markdown>{summary}</Markdown>
+                    {summaries.map(({ summary }, index) => (
+                      <Markdown key={index}>{summary}</Markdown>
                     ))}
                   </div>
                 </div>
-                <div className="flex flex-col gap-2 leading-4">
+                <div className="flex flex-col gap-1">
                   <SectionTitle children="Experience" />
-                  <div className="flex flex-col">
+                  <div className="flex flex-col leading-4">
                     {experiences.map(
                       ({ designation, companyName, dateFrom, dateTo, location, summaryPoints }, index) => (
                         <div key={index}>
@@ -114,7 +134,7 @@ const MyProfile = () => {
                             location={location}
                             summaryPoints={summaryPoints}
                           />
-                          {index < experiences.length - 1 && <div className="h-0.25 w-full bg-gray-200 my-0.5"></div>}
+                          {index < experiences.length - 1 && <Divider />}
                         </div>
                       )
                     )}
@@ -122,18 +142,18 @@ const MyProfile = () => {
                 </div>
               </div>
               <div className="w-[40%] flex flex-col gap-4">
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-1">
                   <SectionTitle children="Skills" />
                   <div className="flex flex-col gap-0">
                     {skills.map(({ skillGroupTitle, skills }, index) => (
-                      <div key={skillGroupTitle} className='leading-4.5'>
+                      <div key={skillGroupTitle} className="leading-4.5">
                         <SkillGroup skillGroupTitle={skillGroupTitle} skills={skills} />
-                        {index < skills.length - 1 && <div className="h-0.25 w-full bg-gray-200 my-1"></div>}
+                        {index < skills.length - 1 && <Divider />}
                       </div>
                     ))}
                   </div>
                 </div>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-1">
                   <SectionTitle children="Projects" />
                   <div className="flex flex-col gap-1">
                     {proejcts
@@ -191,7 +211,7 @@ const MyProfile = () => {
                 <Strengths strengths={strengths} />
               </div>
             </div>
-            <div className="w-[40%] flex flex-col gap-4">
+            <div className="w-[38%] flex flex-col gap-4">
               <div className="flex flex-col gap-2">
                 <SectionTitle children="Projects" />
                 <div className="flex flex-col">
@@ -206,7 +226,7 @@ const MyProfile = () => {
                           dateTo={proj.dateTo}
                           description={proj.description}
                         ></Project>
-                        {index < proejcts.length - 2 && <div className="h-0.25 w-full bg-gray-200 my-1"></div>}
+                        {index < proejcts.length - 2 && <Divider />}
                       </div>
                     ))}
                 </div>

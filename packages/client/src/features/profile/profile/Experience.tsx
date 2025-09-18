@@ -1,6 +1,6 @@
-import React, { type PropsWithChildren } from 'react'
+import { type PropsWithChildren } from 'react'
 import Headline from './Headline'
-import { FaCalendarAlt, FaCaretRight } from 'react-icons/fa'
+import { FaCalendarAlt } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
 import ReactMarkDown from 'react-markdown'
 import { GoDotFill } from 'react-icons/go'
@@ -24,7 +24,7 @@ const Experience = ({
   summaryPoints = [],
 }: ExperienceProps) => {
   return (
-    <div className="leading-5">
+    <div className="leading-4.5">
       {designation && <div className="text-[14px] font-normal">{designation}</div>}
       {companyName && <Headline fontSize={14}>{companyName}</Headline>}
       {certifiedOrganization && <div className="text-[14px] uppercase">{certifiedOrganization}</div>}
