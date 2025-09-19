@@ -1,13 +1,11 @@
 import type { NextFunction, Request, Response } from 'express'
+import z, { ZodError, type ZodSafeParseResult } from 'zod'
 import type { IUser } from '../models/user.model'
 import { UserService } from '../services/user.service'
-import { z, ZodError, type ZodSafeParseResult } from 'zod'
-import lodash from 'lodash'
 import bcrypt from 'bcrypt'
 
-const validateUser = (user: Partial<IUser>): ZodSafeParseResult<any> => {
+const validateUser = (user: IUser): ZodSafeParseResult<any> => {
   const userSchema = z.object({
-    name: z.string('Name is required').min(5, 'User name minimum length should be 5 charecters.'),
     email: z.email({ message: 'Please enter a valid email' }).min(5, 'Email minimum length should be 5 charecters.'),
     password: z
       .string('Password is required.')
@@ -22,8 +20,8 @@ const validateUser = (user: Partial<IUser>): ZodSafeParseResult<any> => {
   return userSchema.safeParse(user)
 }
 
-export const UserController = {
-  async postUser(req: Request, res: Response, next: NextFunction) {
+export const AuthController = {
+  async authenticateUser(req: Request, res: Response, next: NextFunction) {
     try {
       const user: IUser = req.body
       const validationResult = validateUser(user)
@@ -36,19 +34,19 @@ export const UserController = {
 
       if (user.email) {
         const existingUser = await UserService.findUser(user.email)
-        if (existingUser) {
-          res.status(400).send('User already registered.')
+        if (!existingUser) {
+          res.status(400).send('Invalid email id')
+          return
+        }
+
+        const isValidPassword = await bcrypt.compare(user.password, existingUser.password)
+        if (!isValidPassword) {
+          res.status(400).send('Invalid passwird')
           return
         }
       }
 
-      // * Using bcrypt to hash the password
-      const salt = await bcrypt.genSalt(10)
-      const hashPassword = await bcrypt.hash(user.password, salt)
-      user.password = hashPassword
-
-      const createdUser = await UserService.postUser(user)
-      res.send(lodash.pick(createdUser, ['_id', 'name', 'email']))
+      res.send(true)
     } catch (error: any) {
       next(error)
     }

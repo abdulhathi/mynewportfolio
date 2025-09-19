@@ -2,7 +2,7 @@ import type { IUser } from '../models/user.model'
 import { UserRepository } from '../repositories/user.repository'
 
 export const UserService = {
-  async postUser(user: Partial<IUser>) {
+  async postUser(user: IUser) {
     return await UserRepository.postUser(user)
   },
 

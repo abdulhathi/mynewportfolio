@@ -2,7 +2,7 @@ import type { IUser } from '../models/user.model'
 import User from '../models/user.model'
 
 export const UserRepository = {
-  async postUser(user: Partial<IUser>) {
+  async postUser(user: IUser) {
     return await User.create(user)
   },
 

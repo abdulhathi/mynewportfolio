@@ -4,6 +4,7 @@ import connectDB from './config/db'
 import summaryRouter from './routes/summary.routes'
 import skillsRouter from './routes/skills.routes'
 import usersRouter from './routes/users.routes'
+import authRouter from './routes/auth.routes'
 import cors from 'cors'
 
 dotenv.config()
@@ -24,6 +25,7 @@ app.use(express.json())
 app.use('/api/summary', summaryRouter)
 app.use('/api/skills', skillsRouter)
 app.use('/api/users', usersRouter)
+app.use('/api/authenticate', authRouter)
 
 const PORT = process.env.PORT || 4000
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`))
