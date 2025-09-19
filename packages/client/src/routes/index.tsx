@@ -5,6 +5,7 @@ import NotFound from '../pages/NotFound'
 import MyProfile from '../features/profile/profile/MyProfile'
 import SummariesPage from '../features/profile/summaries/pages/SummariesPage'
 import SkillsPage from '../features/profile/skills/pages/SkillsPage'
+import SignUpPage from '../features/signup/pages/SignUpPage'
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
       { path: 'summary', element: <SummariesPage /> },
       { path: 'skills', element: <SkillsPage /> },
       { path: 'myprofile', element: <MyProfile /> },
+      { path: 'signup', element: <SignUpPage /> },
       { path: '*', element: <NotFound /> },
     ],
   },

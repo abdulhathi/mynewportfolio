@@ -31,10 +31,15 @@ import Divider from './Divider'
 const MyProfile = () => {
   const headlines = ['Senior Application Engineer', 'Technical Architect', 'Full-Stack Leader', 'AI/ML Innovator']
   const profileRef = useRef<HTMLDivElement>(null)
-  const handlePrint = useReactToPrint({
+  const [scale, setScale] = useState(1.5)
+  const reactToPrint = useReactToPrint({
     contentRef: profileRef,
   })
-  const [scale, setScale] = useState(1.5)
+  const handlePrint = () => {
+    setScale(0.99)
+    setTimeout(() => reactToPrint(), 0)
+  }
+
   return (
     <div>
       <div className="flex flex-row gap-2 items-start">
