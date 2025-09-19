@@ -3,6 +3,7 @@ import z, { ZodError, type ZodSafeParseResult } from 'zod'
 import type { IUser } from '../models/user.model'
 import { UserService } from '../services/user.service'
 import bcrypt from 'bcrypt'
+import jwt from 'jsonwebtoken'
 
 const validateUser = (user: IUser): ZodSafeParseResult<any> => {
   const userSchema = z.object({
@@ -39,14 +40,18 @@ export const AuthController = {
           return
         }
 
+        // * bcrypt to compare password from request body and database hash password
         const isValidPassword = await bcrypt.compare(user.password, existingUser.password)
         if (!isValidPassword) {
           res.status(400).send('Invalid passwird')
           return
         }
-      }
 
-      res.send(true)
+        // * Sending the Json Web token if the authentication success.
+        const token = jwt.sign({ _id: existingUser._id }, process.env.PRIVATE_KEY as string)
+        res.send(token)
+      }
+      res.send(false)
     } catch (error: any) {
       next(error)
     }
