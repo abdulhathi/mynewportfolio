@@ -1,0 +1,5 @@
+{
+  "jwt": {
+    "secret": "PORTFOLIO_JWT_SECRET"
+  }
+}

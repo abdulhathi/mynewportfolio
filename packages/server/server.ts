@@ -6,8 +6,15 @@ import skillsRouter from './routes/skills.routes'
 import usersRouter from './routes/users.routes'
 import authRouter from './routes/auth.routes'
 import cors from 'cors'
+import config from 'config'
 
 dotenv.config()
+if (!config.get<string>('jwt.secret')) {
+  console.error('FATEL ERROR: jwtPrivateKey is not defined.')
+  // * We can to process exit with 1 if any error. 0 means success
+  process.exit(1)
+}
+
 connectDB()
 
 const app: Application = express()

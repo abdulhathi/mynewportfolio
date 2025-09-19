@@ -4,6 +4,7 @@ import type { IUser } from '../models/user.model'
 import { UserService } from '../services/user.service'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
+import config from 'config'
 
 const validateUser = (user: IUser): ZodSafeParseResult<any> => {
   const userSchema = z.object({
@@ -48,7 +49,9 @@ export const AuthController = {
         }
 
         // * Sending the Json Web token if the authentication success.
-        const token = jwt.sign({ _id: existingUser._id }, process.env.PRIVATE_KEY as string)
+        const pkey = config.get<string>('jwt.secret')
+        console.log(pkey)
+        const token = jwt.sign({ _id: existingUser._id }, pkey)
         res.send(token)
       }
       res.send(false)
