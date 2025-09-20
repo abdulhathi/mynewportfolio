@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaCalendarAlt } from 'react-icons/fa'
-import Headline from './Headline'
+import Headline from '../../../components/Headline'
 
 export type CourseProps = {
   name: string
@@ -12,7 +12,7 @@ export type CourseProps = {
 const Course = ({ name, link, date, issuer }: CourseProps) => {
   return (
     <div className="prose leading-4">
-      <a href={link} className='no-underline'>
+      <a href={link} className="no-underline">
         <Headline fontSize={12}>{name}</Headline>
       </a>
       <div className="flex flex-row gap-1 items-center  text-[12px]">

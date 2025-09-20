@@ -13,7 +13,7 @@ const SignUpPage = () => {
   // if (error && error) setAxiosError(error as AxiosError)
   console.log(typeof error)
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 p-4">
       <ul>{error && ((error as AxiosError).response?.data as string[]).map((e, index) => <li key={index}>{e}</li>)}</ul>
       {isCreateUserSuccess && <div>Success register the User. {response.email}</div>}
       <SignUpHeader />

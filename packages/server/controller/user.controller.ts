@@ -48,7 +48,9 @@ export const UserController = {
       user.password = hashPassword
 
       const createdUser = await UserService.postUser(user)
-      res.send(lodash.pick(createdUser, ['_id', 'name', 'email']))
+      // * Getting the auth token from user module itself
+      const token = createdUser.genAuthToken()
+      res.header('x-auth-token', token).send(lodash.pick(createdUser, ['_id', 'name', 'email']))
     } catch (error: any) {
       next(error)
     }

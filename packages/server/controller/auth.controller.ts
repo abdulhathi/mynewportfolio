@@ -49,9 +49,7 @@ export const AuthController = {
         }
 
         // * Sending the Json Web token if the authentication success.
-        const pkey = config.get<string>('jwt.secret')
-        console.log(pkey)
-        const token = jwt.sign({ _id: existingUser._id }, pkey)
+        const token = existingUser.genAuthToken()
         res.send(token)
       }
       res.send(false)

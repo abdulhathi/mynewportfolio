@@ -1,9 +1,12 @@
-import mongoose, { Document, Schema } from 'mongoose'
+import mongoose, { Document, Model, Schema } from 'mongoose'
+import config from 'config'
+import jwt from 'jsonwebtoken'
 
 export interface IUser extends Document {
   name: string
   email: string
   password: string
+  genAuthToken(): string
 }
 
 const UserSchema = new Schema<IUser>({
@@ -12,6 +15,13 @@ const UserSchema = new Schema<IUser>({
   password: { type: String, minLength: 8, required: true },
 })
 
-const User = mongoose.model('User', UserSchema)
+// * Generating the auth token from user schema as a method (genAuthtoken).
+UserSchema.methods.genAuthToken = function (): string {
+  const pkey = config.get<string>('jwt.secret')
+  const token = jwt.sign({ _id: this._id }, pkey)
+  return token
+}
+
+const User: Model<IUser> = mongoose.model<IUser>('User', UserSchema)
 
 export default User

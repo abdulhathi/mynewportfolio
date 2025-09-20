@@ -6,11 +6,11 @@ const SummariesPage = () => {
   if (isLoading) return <p>Loading Summaries</p>
   if (isError) return <p>Failed to load summaries</p>
   return (
-    <>
+    <div className='p-4'>
       {summaries?.map(({ summary }, index) => (
         <SummaryCard key={index} summary={summary} />
       ))}
-    </>
+    </div>
   )
 }
 

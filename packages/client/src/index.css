@@ -69,3 +69,36 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 95%;
+} */
+body {
+  margin: 0;
+  font-family: 'Saira Condensed', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-size: 1rem;
+}
+input,
+select,
+textarea {
+  font-family: 'Saira Condensed', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0rem;
+}

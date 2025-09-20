@@ -1,4 +1,4 @@
-import React, { type PropsWithChildren } from 'react'
+import { type PropsWithChildren } from 'react'
 
 // w-[940px] h-[1216px]
 type USLetterTemplateProps = PropsWithChildren & {

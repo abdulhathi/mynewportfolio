@@ -1,6 +1,6 @@
 import { FaLinkedin } from 'react-icons/fa'
 import { SiLeetcode } from 'react-icons/si'
-import Headline from './Headline'
+import Headline from '../../../components/Headline'
 import { BsFillBriefcaseFill } from 'react-icons/bs'
 import { FaSquareGithub } from 'react-icons/fa6'
 
