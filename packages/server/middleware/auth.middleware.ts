@@ -9,6 +9,7 @@ export const AuthMiddleware = {
 
     try {
       const payload = jwt.verify(authToken, config.get<string>('jwt.secret'))
+      req.body = payload
       next()
     } catch (error: any) {
       res.status(400).send('Invalid token.')

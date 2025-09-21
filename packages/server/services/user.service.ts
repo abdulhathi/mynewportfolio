@@ -8,5 +8,9 @@ export const UserService = {
 
   async findUser(email: string) {
     return await UserRepository.findUser(email)
+  },
+
+  async findUserById(id: string) {
+    return await UserRepository.findUserById(id)
   }
 }

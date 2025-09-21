@@ -55,4 +55,14 @@ export const UserController = {
       next(error)
     }
   },
+
+  async getUser(req: Request, res: Response, next: NextFunction) {
+    try {
+      const { _id } = req.body
+      const existingUser = await UserService.findUserById(_id)
+      res.send(existingUser)
+    } catch (error: any) {
+      next(error)
+    }
+  },
 }

@@ -7,7 +7,10 @@ export const UserRepository = {
   },
 
   async findUser(email: string) {
-    return await User.findOne({email})
-  }
-  
+    return await User.findOne({ email })
+  },
+
+  async findUserById(id: string) {
+    return await User.findById(id).select('-_id -password')
+  },
 }

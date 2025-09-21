@@ -27,7 +27,6 @@ const Welcome = () => {
             reactToPrint()
             // setTimeout(() => {
             //   closeModel()
-
             // }, 0.00000000000001)
           }}
         >
