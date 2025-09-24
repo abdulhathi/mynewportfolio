@@ -7,6 +7,7 @@ import SkillsPage from '../features/profile/skills/pages/SkillsPage'
 import SignUpPage from '../features/signup/pages/SignUpPage'
 import PdfDownload from '../features/pdfDownload/pages/PdfDownload'
 import Welcome from '../features/welcome/pages/Welcome'
+import Login from '../features/login/pages/Login'
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
       { path: 'myprofile', element: <MyProfile /> },
       { path: 'signup', element: <SignUpPage /> },
       { path: 'download', element: <PdfDownload /> },
+      { path: 'login', element: <Login /> },
       { path: '*', element: <NotFound /> },
     ],
   },

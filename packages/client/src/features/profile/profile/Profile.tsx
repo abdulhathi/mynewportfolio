@@ -31,9 +31,11 @@ const Profile = ({ profileRef }: ProfileProps) => {
       ref={profileRef}
       className="flex flex-col items-center justify-center w-full profile-font-family bg-white text-black"
     >
-      <USLetterTemplate className="p-8">
-        <div className="flex flex-col gap-0">
-          <ProfileHeader />
+      <div className="flex w-[828px] px-8 pt-6 pb-5 bg-[#2A3658]">
+        <ProfileHeader />
+      </div>
+      <div className="w-[828px] h-[900px] px-8 pt-2 pb-8">
+        <div className="flex flex-col gap-2">
           <div className="flex gap-4 w-full">
             <div className="w-[60%] flex flex-col gap-2">
               <div className="flex flex-col gap-1">
@@ -78,7 +80,7 @@ const Profile = ({ profileRef }: ProfileProps) => {
             </div>
           </div>
         </div>
-      </USLetterTemplate>
+      </div>
       <USLetterTemplate className="p-8">
         <div className="flex gap-4 w-full">
           <div className="w-[60%] flex flex-col gap-2">

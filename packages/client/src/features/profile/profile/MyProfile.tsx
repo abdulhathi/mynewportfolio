@@ -10,13 +10,13 @@ const MyProfile = () => {
     contentRef: profileRef,
   })
   const handlePrint = () => {
-    setScale(0.99)
+    setScale(1.01)
     setTimeout(() => reactToPrint(), 0)
   }
 
   return (
-    <div className="p-4">
-      <div className="flex flex-row gap-2 justify-center pt-10">
+    <div className="p-4 flex flex-col gap-4">
+      <div className="flex flex-row gap-2 justify-center">
         <button onClick={handlePrint} className="border px-2 rounded cursor-pointer">
           Print
         </button>

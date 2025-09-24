@@ -1,4 +1,4 @@
-import portfolioPhoto from '../../../assets/profile_photo.jpeg'
+// import portfolioPhoto from '../../../assets/profile_photo.jpeg'
 import Headline from '../../../components/Headline'
 import { FaLinkedin, FaPhone } from 'react-icons/fa'
 import { MdAlternateEmail, MdAssuredWorkload } from 'react-icons/md'
@@ -8,7 +8,7 @@ import { FaLocationDot } from 'react-icons/fa6'
 const ProfileHeader = () => {
   const headlines = ['Senior Application Engineer', 'Technical Architect', 'Full-Stack Leader', 'AI/ML Innovator']
   return (
-    <div className="flex flex-row place-content-between w-full text-black">
+    <div className="flex flex-row place-content-between  text-white">
       <div className="flex flex-col gap-1">
         <p className="text-[30px] uppercase font-medium p-0 m-0 leading-5">Abdul Hathi Mohamed Hussain</p>
         <div className="flex gap-2 leading-5">
@@ -59,7 +59,7 @@ const ProfileHeader = () => {
           </div>
         </div>
       </div>
-      <img src={portfolioPhoto} width={120} className="rounded-full"></img>
+      {/* <img width={120} className="rounded-full"></img> */}
     </div>
   )
 }
