@@ -7,7 +7,7 @@ import { AxiosError } from 'axios'
 
 const SignUpPage = () => {
   const { mutate: createUser, data: response, isSuccess: isCreateUserSuccess, error } = useUsers()
-  const emptyUser: User = { name: '', email: '', password: '' }
+  const emptyUser: User = { name: '', email: '', password: '', admin: false }
   const [user, setUser] = useState<User>(emptyUser)
   // const [axiosError, setAxiosError] = useState<AxiosError>()
   // if (error && error) setAxiosError(error as AxiosError)

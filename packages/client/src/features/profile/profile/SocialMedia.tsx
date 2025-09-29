@@ -1,5 +1,5 @@
 import { FaLinkedin } from 'react-icons/fa'
-import { SiLeetcode } from 'react-icons/si'
+import { SiCoursera, SiCredly, SiGravatar, SiLeetcode } from 'react-icons/si'
 import Headline from '../../../components/Headline'
 import { BsFillBriefcaseFill } from 'react-icons/bs'
 import { FaSquareGithub } from 'react-icons/fa6'
@@ -13,11 +13,17 @@ type SocialMediaProps = {
 const SocialMedia = ({ name, link, icon }: SocialMediaProps) => {
   const faIcon =
     icon === 'FaLinkedin' ? (
-      <FaLinkedin className="text-gray-700 w-3" />
+      <FaLinkedin className="text-[#2D65BC] w-4" />
     ) : icon === 'SiLeetcode' ? (
-      <SiLeetcode className="text-gray-700 w-3" />
+      <SiLeetcode className="text-[#F2A640] w-4" />
     ) : icon === 'FaSquareGithub' ? (
       <FaSquareGithub className="text-gray-700 w-3" />
+    ) : icon === 'SiCredly' ? (
+      <SiCredly className="text-[#ED742E]" />
+    ) : icon === 'SiCoursera' ? (
+      <SiCoursera className="text-gray-700 w-3" />
+    ) : icon === 'SiGravatar' ? (
+      <SiGravatar className="text-gray-700 w-3" />
     ) : (
       <BsFillBriefcaseFill className="text-gray-700 w-3" />
     )

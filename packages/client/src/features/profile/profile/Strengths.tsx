@@ -1,4 +1,3 @@
-import React from 'react'
 import type { StrengthProps } from './Strength'
 import Strength from './Strength'
 import Divider from './Divider'

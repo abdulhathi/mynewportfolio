@@ -1,4 +1,3 @@
-import React from 'react'
 import MyTime from './MyTime'
 
 const Activities = () => {

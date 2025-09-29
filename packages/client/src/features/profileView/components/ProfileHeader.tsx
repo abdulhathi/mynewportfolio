@@ -6,7 +6,7 @@ import { SiLeetcode } from 'react-icons/si'
 import { FaLocationDot } from 'react-icons/fa6'
 
 const ProfileHeader = () => {
-  const headlines = ['Senior Application Engineer', 'Technical Architect', 'Full-Stack Leader', 'AI/ML Innovator']
+  const headlines = ['Senior Application Engineer', 'Technical Architect', 'Full-Stack Leader', 'AI/ML & Cloud Innovator']
   return (
     <div className="flex flex-row place-content-between  text-white">
       <div className="flex flex-col gap-1">

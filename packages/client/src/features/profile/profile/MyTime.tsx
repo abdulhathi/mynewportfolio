@@ -1,13 +1,13 @@
 import classnames from 'classnames'
 
-const activities = [
-  { name: 'Coding & Development', value: 70 },
-  { name: 'Code Review', value: 20 },
-  { name: 'Mentoring Junior Engineers', value: 10 },
-  { name: 'Agile(scrum & Grooming)', value: 10 },
-]
+// const activities = [
+//   { name: 'Coding & Development', value: 70 },
+//   { name: 'Code Review', value: 20 },
+//   { name: 'Mentoring Junior Engineers', value: 10 },
+//   { name: 'Agile(scrum & Grooming)', value: 10 },
+// ]
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
+// const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
 
 const MyTime = () => {
   return (

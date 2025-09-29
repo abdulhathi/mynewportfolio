@@ -1,9 +1,8 @@
 import { type PropsWithChildren } from 'react'
 import Headline from '../../../components/Headline'
+import ReactMarkDown from 'react-markdown'
 import { FaCalendarAlt } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
-import ReactMarkDown from 'react-markdown'
-import { GoDotFill } from 'react-icons/go'
 
 type ExperienceProps = PropsWithChildren & {
   designation?: string
@@ -47,7 +46,7 @@ const Experience = ({
       <div className="mt-0 prose text-[11px] leading-[14px]">
         {summaryPoints.map((point, index) => (
           <div className="flex h-full gap-1.5" key={index}>
-            <GoDotFill className="pt-1" />
+            {/* <GoDotFill className="pt-1" /> */}
             <div className="markdown w-[750px]">
               <ReactMarkDown>{point}</ReactMarkDown>
             </div>

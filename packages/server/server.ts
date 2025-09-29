@@ -1,12 +1,12 @@
 import express, { type Application } from 'express'
 import dotenv from 'dotenv'
-import connectDB from './config/db'
 import summaryRouter from './routes/summary.routes'
 import skillsRouter from './routes/skills.routes'
 import usersRouter from './routes/users.routes'
 import authRouter from './routes/auth.routes'
 import cors from 'cors'
 import config from 'config'
+import connectDB from './db'
 
 dotenv.config()
 if (!config.get<string>('jwt.secret')) {
