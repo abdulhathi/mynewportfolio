@@ -8,6 +8,6 @@ RUN bun install
 # Copy app
 COPY . .
 
-EXPOSE 5173
+EXPOSE 8080
 
 CMD [ "bun", "run", "dev" ]

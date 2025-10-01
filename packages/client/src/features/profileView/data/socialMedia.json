@@ -1,0 +1,38 @@
+[
+  {
+    "name": "GitHub",
+    "link": "https://github.com/abdulhathi",
+    "icon": "FaSquareGithub"
+  },
+  {
+    "name": "LeetCode",
+    "link": "https://leetcode.com/u/abdulhathi/",
+    "icon": "SiLeetcode"
+  },
+  {
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/abdulhathi/",
+    "icon": "FaLinkedin"
+  },
+  {
+    "name": "Website",
+    "link": "http://www.abdulhathi.com",
+    "icon": "BsFillBriefcaseFill"
+  },
+  {
+    "name": "Coursera",
+    "link": "https://www.coursera.org/user/a9c01e0e57441285f2a5d6c5b26c15be",
+    "icon": "SiCoursera"
+  },
+  {
+    "name": "Credly",
+    "link": "https://www.credly.com/users/abdul-hathi-mohamed-hussain",
+    "icon": "SiCredly"
+  },
+  {
+    "name": "Gravatar",
+    "link": "https://gravatar.com/generalgladiator5e29c32a3b",
+    "icon": "SiGravatar"
+  }
+  
+]

@@ -8,6 +8,7 @@ import SignUpPage from '../features/signup/pages/SignUpPage'
 import PdfDownload from '../features/pdfDownload/pages/PdfDownload'
 import Welcome from '../features/welcome/pages/Welcome'
 import Login from '../features/login/pages/Login'
+import ProfileView from '../features/profileView/pages/ProfileView'
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
       { path: 'summary', element: <SummariesPage /> },
       { path: 'skills', element: <SkillsPage /> },
       { path: 'myprofile', element: <MyProfile /> },
+      { path: 'mynewprofile', element: <ProfileView /> },
       { path: 'signup', element: <SignUpPage /> },
       { path: 'download', element: <PdfDownload /> },
       { path: 'login', element: <Login /> },
