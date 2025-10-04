@@ -1,13 +1,16 @@
 import SectionTitle from './SectionTitle'
-import Markdown from 'react-markdown'
 import summaries from '../data/summary.json'
+import ReactMarkdown from 'react-markdown'
 
-const Summary = () => {
+interface SummaryProps {
+  fontSize?: string
+}
+const Summary = ({ fontSize = '12' }: SummaryProps) => {
   return (
     <div className="flex flex-col gap-1">
       <SectionTitle children="Summary" />
-      <div className="text-[12px]">
-        {summaries.map(({ summary, display }, index) => display && <Markdown key={index}>{summary}</Markdown>)}
+      <div className={`text-[${fontSize}px]`}>
+        <ReactMarkdown>{summaries[1].summary}</ReactMarkdown>
       </div>
     </div>
   )

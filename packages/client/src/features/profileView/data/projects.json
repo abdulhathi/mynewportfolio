@@ -5,15 +5,15 @@
     "dateFrom": "09/2023",
     "dateTo": "Present",
     "location": "",
-    "description": "Implemented patient onboarding and setup within the myMedidata portal, enabling automated and simplified reimbursements and stipends for clinical trial participants. Enhanced patient experience by streamlining compensation for travel, childcare, meals, lost wages, and mileage directly through their myMedidata accounts."
+    "description": "Streamlined patient onboarding and automated reimbursements/stipends in the myMedidata portal, enhancing compensation for travel, childcare, meals, lost wages, and mileage."
   },
   {
-    "name": "AnG & Availity portal:",
+    "name": "AnG & Availity portal",
     "companyName": "Molina Healthcare",
     "dateFrom": "01/2023",
     "dateTo": "08/2023",
     "location": "",
-    "description": "Integrated Availity multi-payer appeals application with Molina Healthcare, enabling providers to efficiently submit and track claim appeals and coverage reevaluation requests."
+    "description": "Integrated Availity multi-payer appeals with Molina Healthcare, enabling providers to efficiently submit and track claim appeals."
   },
   {
     "name": "AnG",
@@ -21,7 +21,7 @@
     "dateFrom": "01/2019",
     "dateTo": "12/2022",
     "location": "",
-    "description": "Designed and enhanced Appeals & Grievances systems to improve case tracking, auditability, and reporting for Medicaid, Medicare, and Marketplace business lines."
+    "description": "Enhanced Appeals & Grievances systems to improve case tracking, reporting, and auditability across Medicaid, Medicare, and Marketplace lines."
   },
   {
     "name": "Pursuit",
@@ -29,7 +29,7 @@
     "dateFrom": "09/2014",
     "dateTo": "03/2019",
     "location": "",
-    "description": "Developed a clinical data platform that generated state-compliant PDF records and securely transmitted them via RightFax, improving provider access to member clinical information."
+    "description": "Developed a clinical data platform generating state-compliant PDFs and securely transmitting via RightFax, improving provider access to patient records."
   },
   {
     "name": "Utilization Management",
@@ -37,15 +37,15 @@
     "dateFrom": "03/2013",
     "dateTo": "12/2017",
     "location": "",
-    "description": "Built a web-based workflow system supporting Prior Authorization, Case Management, Pharmacy, and Behavioral Health operations across multiple health plans."
+    "description": "Built web-based workflows supporting Prior Authorization, Case Management, Pharmacy, and Behavioral Health across multiple health plans."
   },
   {
-    "name": "New Client Implementation",
+    "name": "Client Implementation",
     "companyName": "TMGHealth",
     "dateFrom": "03/2012",
     "dateTo": "02/2013",
     "location": "",
-    "description": "Led development of Medicare/Medicaid data extracts, operational reports, and CMS-compliant interface programs during onboarding of new health plan clients."
+    "description": "Led Medicare/Medicaid data extracts, operational reports, and CMS-compliant interfaces for onboarding new health plan clients."
   },
   {
     "name": "IMServ EDV Solution",
@@ -53,15 +53,15 @@
     "dateFrom": "04/2011",
     "dateTo": "02/2012",
     "location": "",
-    "description": "Delivered energy data management solutions enabling organizations to reduce energy costs, control carbon emissions, and improve sustainability reporting."
+    "description": "Delivered energy data management solutions to reduce costs, control carbon emissions, and improve sustainability reporting."
   },
   {
-    "name": "Patient Inquiry App & Portal",
+    "name": "Patient Inquiry & Portal",
     "companyName": "MedData",
     "dateFrom": "04/2010",
     "dateTo": "03/2011",
     "location": "",
-    "description": "Built Silverlight and ASP.NET web applications for patient demographic lookups, payment tracking, and self-service portals to improve patient engagement."
+    "description": "Developed Silverlight and ASP.NET applications for patient lookups, payment tracking, and self-service portals to boost engagement."
   },
   {
     "name": "Lorenzo Patient record",
@@ -77,6 +77,6 @@
     "dateFrom": "12/2006",
     "dateTo": "05/2008",
     "location": "",
-    "description": "Developed multiple web and kiosk applications, including: \n **CoopsLimited.com** - A business vetting platform ensuring trusted service providers. \n\n **Alipes Kiosk** - A touch-based foot treatment and shoe customization solution. \n\n **Kothattai.com** - An online vehicle movement system for managing fleets and logistics."
+    "description": "Built multiple web and kiosk apps: \n **CoopsLimited.com** - Business vetting platform. \n\n **Alipes Kiosk** - Touch-based foot treatment & shoe customization. \n\n **Kothattai.com** - Fleet and logistics management system"
   }
 ]

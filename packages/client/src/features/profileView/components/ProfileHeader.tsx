@@ -4,31 +4,31 @@ import { FaLocationDot } from 'react-icons/fa6'
 import SocialMedias from '../pages/SocialMedias'
 
 const ProfileHeader = () => {
-  const headlines = ['Principal Solutions Architect – Cloud & AI', 'Full-Stack Leader', 'AI/ML Innovator']
+  const headlines = ['Principal Architect | Senior Staff Engineer | Cloud & AI/ML | Full-Stack Leader']
   return (
-    <div className="flex flex-col justify-start w-full gap-1">
-      <div className="text-3xl uppercase font-semibold">Abdul Hathi Mohamed Hussain</div>
-      <div className="flex font-medium gap-1">
+    <div className="flex flex-col justify-start w-full gap-0.5">
+      <div className="text-3xl uppercase font-semibold leading-6">Abdul Hathi Mohamed Hussain</div>
+      <div className="flex gap-1 items-center">
         {headlines.map((headline, index) => (
-          <div className="flex gap-1 text-1xl" key={index}>
+          <div className="flex gap-1 items-center" key={index}>
             <div>{headline}</div>
-            <div>{index + 1 === headlines.length ? '' : '|'}</div>
+            {index < headlines.length - 1 && <div className="text-[12px]">|</div>}
           </div>
         ))}
       </div>
       <div className="flex flex-row gap-6 text-[11px]">
-        <div className="flex gap-1 items-center">
-          <FaPhone className="text-[#458EF7]" />
+        <div className="flex flex-row gap-1 items-center">
+          <FaPhone className="text-[#458EF7] text-[10px]" />
           <p className="font-medium">562-606-8314</p>
         </div>
         <div className="flex gap-1 items-center">
-          <MdAlternateEmail className="text-[#458EF7]" />
+          <MdAlternateEmail className="text-[#458EF7] text-[10px]" />
           <a className="font-medium" href="mailto:abdulhathi@gmail.com">
             abdulhathi@gmail.com
           </a>
         </div>
         <div className="flex gap-1 items-center font-medium">
-          <FaLocationDot className="text-[#458EF7]" />
+          <FaLocationDot className="text-[#458EF7] text-[10px]" />
           28 Hayes Street, Irvine, CA - 92620
         </div>
       </div>

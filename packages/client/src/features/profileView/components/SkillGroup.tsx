@@ -9,14 +9,15 @@ type SkillGroupProps = {
   skillGroupTitle?: string
   // skills: TechnicalSkill[]
   skills: string[]
+  fontSize?: string
 }
 
-const SkillGroup = ({ skillGroupTitle, skills }: SkillGroupProps) => {
+const SkillGroup = ({ skillGroupTitle, skills, fontSize = '12' }: SkillGroupProps) => {
   return (
     <div>
-      <Headline fontSize={12}>{skillGroupTitle}</Headline>
+      <Headline fontSize={fontSize}>{skillGroupTitle}</Headline>
       {/* <p className="text-[12px]">{skills.map((skill) => skill.skillName).join(', ')}</p> */}
-      <div className="text-[12px] pl-3">
+      <div className={`text-[${fontSize}px] pl-3`}>
         {skills.map((skill, index) => (
           <li key={index}>{skill}</li>
         ))}

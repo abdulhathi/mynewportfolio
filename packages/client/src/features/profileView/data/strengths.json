@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Artificial Intelligence & Machine Learning",
+    "description": "Practical experience with AI/ML workflows, including working with large language models (LLMs), applying prompt engineering techniques, and implementing retrieval-augmented generation (RAG) solutions. Skilled in leveraging the Python data ecosystem (NumPy, Pandas, Matplotlib, BeautifulSoup, Jupyter Notebook) for experimentation, analysis, and model integration into applications.",
+    "icon": "ai"
+  },
+  {
+    "name": "Cloud Solutions (AWS, Azure)",
+    "description": "Skilled in deploying, managing, and optimizing cloud-based infrastructures, ensuring high availability, security, and cost efficiency.",
+    "icon": "cloud"
+  },
+  {
+    "name": "Full-Stack Engineering",
+    "description": "Expertise in designing and implementing end-to-end web applications, seamlessly integrating frontend and backend technologies for scalable and maintainable solutions.",
+    "icon": "vscode"
+  },
+  {
+    "name": "API Architecture",
+    "description": "Experienced in designing robust, secure, and performant APIs that enable seamless communication between services and systems.",
+    "icon": "api"
+  },
+  {
+    "name": "Technical Leadership",
+    "description": "Adept at guiding development teams, mentoring engineers, and driving technical strategy to align with business goals.",
+    "icon": "leadership"
+  },
+  {
+    "name": "Agile Delivery",
+    "description": "Proven ability to lead and contribute to Agile teams, delivering iterative, high-quality software on time while adapting to evolving requirements.",
+    "icon": "scrum"
+  }
+]

@@ -22,7 +22,7 @@ const app: Application = express()
 // ^ Notice the subtle detail: there is a trailing slash / in the header value. Browsers treat 'http://localhost:5173' and 'http://localhost:5173/' as different origins, so CORS fails.
 app.use(
   cors({
-    origin: 'http://localhost:5173', // your React dev server
+    origin: 'http://localhost:80', // your React dev server
     credentials: true, // if you send cookies or auth headers
   })
 )

@@ -1,16 +1,19 @@
 import Divider from '../../../components/Divider'
-import Project from '../components/ProfileProject'
+import Project from '../components/Project'
 import SectionTitle from '../components/SectionTitle'
 import projects from '../data/projects.json'
 
-const Projects = () => {
+interface ProjectSProps {
+  projectsCount?: number
+}
+const Projects = ({ projectsCount = 5 }: ProjectSProps) => {
   return (
     <div className="flex flex-col gap-2">
       <SectionTitle children="Projects" />
       <div className="flex flex-col">
         {projects.map(
           (proj, index) =>
-            index < 5 && (
+            index < projectsCount && (
               <div key={index}>
                 <Project
                   name={proj.name}
@@ -19,7 +22,7 @@ const Projects = () => {
                   dateTo={proj.dateTo}
                   description={proj.description}
                 ></Project>
-                {index < projects.length && <Divider />}
+                {index < projectsCount - 1 && <Divider />}
               </div>
             )
         )}

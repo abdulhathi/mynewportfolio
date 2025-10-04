@@ -10,7 +10,7 @@
       "Defined and implemented **microservices architecture** patterns, improving scalability, modularity, and system resilience.",
       "Partnered with product and cloud teams to design **API gateways, JWT/OAuth authentication strategies, and event-driven workflows.**",
       "Developed **React + Redux applications** with responsive mobile-first design, reducing load times by 30%.",
-      "Established automated testing strategy (Jest, Cypress, Cucumber), achieving **98%+ coverage.**",
+      "Established automated testing strategy (Cypress, Cucumber), achieving **98%+ coverage.**",
       "Collaborated across engineering and QA teams to reduce high-priority bug backlog by 50%.",
       "Applied **AI/ML technologies** (LLMs, RAG, Python ecosystem) to deliver automation and analytics that improved clinical trial operations."
     ]
@@ -22,9 +22,9 @@
     "dateTo": "08/2023",
     "location": "Long Beach, United States",
     "summaryPoints": [
-      "Architected and developed **enterprise-scale applications** leveraging **.NET, React, Node.js and Azure** enhancing performance, scalability, and reliability.",
+      "Architected and developed **enterprise-scale applications** leveraging **.NET, React, Node.js, and Azure**, enhancing performance, scalability, and reliability.",
       "Designed and delivered **mission-critical REST APIs** (.NET and Node.js) for healthcare systems, achieving **99.99% uptime** and seamless third-party integrations that reduced development time by **35%.**",
-      "Strong hands-on programming expertise in **Python, JavaScript, TypeScript and C#**, applying best practices for maintainable and high-quality code.",
+      "Strong hands-on programming expertise in **Python, JavaScript, TypeScript, and C#**, applying best practices for maintainable and high-quality code.",
       "Spearheaded the **migration of monolithic applications to cloud-based microservices (Azure, AWS)**, cutting infrastructure costs by **25%.**",
       "Collaborated with cross-functional teams (PMs, QA, clients) to resolve technical issues and ensure timely project delivery.",
       "Mentored and coached engineers, increasing **team velocity by 20%** and **onboarding speed by 30%**.",
@@ -38,8 +38,8 @@
     "dateTo": "04/2010",
     "location": "Chennai, India",
     "summaryPoints": [
-      "Built **.NET, C#, JavaScript & SQL enterprise apps** for global clients.",
-      "Optimized database schemas, improving performance by 40%."
+      "**Designed and delivered high-performance software solutions** in collaboration with cross-functional teams, **leading large-scale deployments and integrating third-party tools** (ASP.NET, C#, JavaScript, Telerik).",
+      "**Optimized database schemas**, improving performance by **40%** and ensuring **robust application functionality** (SQL)."
     ]
   },
   {

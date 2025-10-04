@@ -2,8 +2,8 @@ import { useRef, useState } from 'react'
 import portfolioPhoto from '../../../assets/profile_photo.jpeg'
 import Button from '../../../corecomponents/Button'
 import PopupModel from '../../../components/PopupModel'
-import Profile from '../../profile/profile/Profile'
 import { useReactToPrint } from 'react-to-print'
+import ProfileForDownload from '../../profileView/pages/ProfileForDownload'
 
 const Welcome = () => {
   const [isModelOpen, setModelOpen] = useState<boolean>(true)
@@ -33,7 +33,7 @@ const Welcome = () => {
           Download Profile
         </Button>
         <PopupModel isOpen={isModelOpen} onClose={closeModel}>
-          <Profile profileRef={profileRef} />
+          <ProfileForDownload profileRef={profileRef} />
         </PopupModel>
       </header>
     </div>

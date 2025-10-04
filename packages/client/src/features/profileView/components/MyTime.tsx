@@ -11,7 +11,7 @@ import classnames from 'classnames'
 
 const MyTime = () => {
   return (
-    <div className="grid grid-cols-2 gap-1 text-[12px]">
+    <div className="flex flex-row gap-2 text-[12px] w-full flex-wrap justify-self-auto">
       <div className="flex gap-2 items-center">
         <div className={classnames('w-3', 'h-3', `bg-[#0088FE]`)} />
         <p>Coding & Development - 70%</p>

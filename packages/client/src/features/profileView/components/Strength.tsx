@@ -1,10 +1,10 @@
-import React from 'react'
 import { BiNetworkChart } from 'react-icons/bi'
 import { FaPeopleGroup } from 'react-icons/fa6'
 import { GiStrong } from 'react-icons/gi'
 import { GrCycle } from 'react-icons/gr'
 import { TbCloudComputing } from 'react-icons/tb'
 import { VscVscode } from 'react-icons/vsc'
+import { AiOutlineRobot } from 'react-icons/ai'
 
 export type StrengthProps = {
   name: string
@@ -18,6 +18,7 @@ const iconMap: { [key: string]: React.ReactNode } = {
   api: <BiNetworkChart />,
   scrum: <GrCycle />,
   leadership: <FaPeopleGroup />,
+  ai: <AiOutlineRobot />,
 }
 
 const Strength = ({ name, description, icon }: StrengthProps) => {

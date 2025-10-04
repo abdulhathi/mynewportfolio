@@ -7,8 +7,18 @@ interface ExperiencesProps {
   start: number
   end: number
   showTitle?: boolean
+  fontSize?: string
+  designationFontSize?: string
+  durationFontSize?: string
 }
-const Experiences = ({ start, end, showTitle = true }: ExperiencesProps) => {
+const Experiences = ({
+  start,
+  end,
+  showTitle = true,
+  fontSize,
+  designationFontSize,
+  durationFontSize,
+}: ExperiencesProps) => {
   return (
     <div className="flex flex-col gap-1">
       {showTitle && <SectionTitle children="Experience" />}
@@ -26,8 +36,11 @@ const Experiences = ({ start, end, showTitle = true }: ExperiencesProps) => {
                   dateTo={dateTo}
                   location={location}
                   summaryPoints={summaryPoints}
+                  fontSize={fontSize}
+                  designationFontSize={designationFontSize}
+                  durationFontSize={durationFontSize}
                 />
-                {index < experiences.length - 1 && <Divider />}
+                {index < end && <Divider />}
               </div>
             )
         )}

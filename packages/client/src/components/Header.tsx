@@ -15,8 +15,9 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex gap-4">
+          <Link to="/profilesidebyside">Profile Side-by-Side</Link>
           <Link to="/mynewprofile">New-Profile</Link>
-          <Link to="/myprofile">Profile</Link>
+          <Link to="/document">Export to Document</Link>
           {jwtToken && user?.admin && (
             <div className="flex gap-4">
               <Link to="/summary">Summary</Link>

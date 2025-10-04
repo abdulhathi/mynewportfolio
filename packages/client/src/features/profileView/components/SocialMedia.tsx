@@ -13,25 +13,25 @@ type SocialMediaProps = {
 const SocialMedia = ({ name, link, icon }: SocialMediaProps) => {
   const faIcon =
     icon === 'FaLinkedin' ? (
-      <FaLinkedin className="text-[#2D65BC] w-4" />
+      <FaLinkedin className="text-[#2D65BC] text-[10px]" />
     ) : icon === 'SiLeetcode' ? (
-      <SiLeetcode className="text-[#F2A640] w-4" />
+      <SiLeetcode className="text-[#F2A640] text-[10px]" />
     ) : icon === 'FaSquareGithub' ? (
-      <FaSquareGithub className="text-gray-700 w-3" />
+      <FaSquareGithub className="text-gray-700 text-[10px]" />
     ) : icon === 'SiCredly' ? (
-      <SiCredly className="text-[#ED742E]" />
+      <SiCredly className="text-[#ED742E] text-[10px]" />
     ) : icon === 'SiCoursera' ? (
-      <SiCoursera className="text-gray-700 w-3" />
+      <SiCoursera className="text-gray-700 text-[10px]" />
     ) : icon === 'SiGravatar' ? (
-      <SiGravatar className="text-gray-700 w-3" />
+      <SiGravatar className="text-gray-700 text-[10px]" />
     ) : (
-      <BsFillBriefcaseFill className="text-gray-700 w-3" />
+      <BsFillBriefcaseFill className="text-gray-700 text-[10px]" />
     )
   return (
     <div className="flex items-center gap-1">
       {faIcon}
       <a href={link}>
-        <Headline fontSize={12}>{name}</Headline>
+        <Headline fontSize='12'>{name}</Headline>
       </a>
     </div>
   )

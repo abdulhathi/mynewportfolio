@@ -12,5 +12,40 @@
     "date": "2025",
     "issuer": "IBM",
     "credentialid": "OBOBYY9V1A1Y"
+  },
+  {
+    "name": "Build AI Powered Apps",
+    "link": "https://www.abdulhathi.com/static/media/certificate-of-completion-for-build-ai-powered-apps.d189f6ceff3b746e0b88.png",
+    "date": "2025",
+    "issuer": "Code with Mosh",
+    "credentialid": "cert_c899wf7z"
+  },
+  {
+    "name": "Ruby Essential",
+    "link": "https://www.linkedin.com/learning/certificates/a4cc4981397abe67fc6a4ac414bc0ce56cbb417d6411df0e6ada9dc9a5f5e72f?accountId=0&u=0&success=true&authUUID=fJaRl9XSQYmwfrao6XHlkw%3D%3D",
+    "date": "2023",
+    "issuer": "LinkedIn",
+    "credentialid": ""
+  },
+  {
+    "name": "Complete Python Mastery",
+    "link": "https://www.abdulhathi.com/static/media/certificate-of-completion-for-python.f12ea10901832faf9d8e.png",
+    "date": "2023",
+    "issuer": "Code With Mosh",
+    "credentialid": "cert_mzjtb29g"
+  },
+  {
+    "name": "The Ultimate HTML5 & CSS3 Series",
+    "link": "https://www.abdulhathi.com/static/media/The%20Ultimate%20HTML5%20And%20CSS3_Part1.1e0002c88d02aded798d.jpg",
+    "date": "2023",
+    "issuer": "Code With Mosh",
+    "credentialid": "cert_6wlntdn9"
+  },
+  {
+    "name": "Mastering Data Structures & Algorithms",
+    "link": "https://www.udemy.com/certificate/UC-3BSD8H27/",
+    "date": "2020",
+    "issuer": "Udemy",
+    "credentialid": "UC-3BSD8H27"
   }
 ]

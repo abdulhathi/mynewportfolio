@@ -70,8 +70,7 @@
   {
     "skillGroupTitle": "Enterprise & Domain-Specific Tools",
     "skills": [
-      "Healthcare / Insurance: Trizetto, QNXT",
-      "UI Component Libraries: Kendo UI, Telerik",
+      "Healthcare / Insurance / Lifescience: QNXT",
       "Data Integration & ETL: SSIS, ETL processes"
     ]
   }
