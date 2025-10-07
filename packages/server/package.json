@@ -4,7 +4,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "bun --watch server.ts",
-    "serve": "pm2 start server.ts --interpreter node"
+    "serve": "pm2 start server.ts --name 'profile-backend' --interpreter ts-node # or tsx"
   },
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
