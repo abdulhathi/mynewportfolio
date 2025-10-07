@@ -5,8 +5,10 @@ import skills from '../data/skills.json'
 interface SkillsProps {
   doubleSided?: boolean
   fontSize?: string
+  start?: number
+  end?: number
 }
-const Skills = ({ doubleSided = false, fontSize }: SkillsProps) => {
+const Skills = ({ doubleSided = false, fontSize, start = 0, end = 100 }: SkillsProps) => {
   return (
     <div className="flex flex-col gap-1 w-full">
       <SectionTitle children="Skills" />
@@ -35,11 +37,13 @@ const Skills = ({ doubleSided = false, fontSize }: SkillsProps) => {
         </div>
       ) : (
         <div className="flex flex-col">
-          {skills.map(({ skillGroupTitle, skills }, index) => (
-            <div key={index}>
-              <SkillGroup skillGroupTitle={skillGroupTitle} skills={skills} fontSize={fontSize} />
-            </div>
-          ))}
+          {skills.map(
+            ({ skillGroupTitle, skills }, index) =>
+              index >= start &&
+              index <= end && (
+                <SkillGroup key={index} skillGroupTitle={skillGroupTitle} skills={skills} fontSize={fontSize} />
+              )
+          )}
         </div>
       )}
     </div>

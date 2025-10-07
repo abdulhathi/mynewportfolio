@@ -8,6 +8,7 @@ import Projects from './Projects'
 import Skills from './Skills'
 import Strengths from './Strengths'
 import './ProfileView.css'
+import skills from '../data/skills.json'
 
 const ProfileSideBySide = () => {
   return (
@@ -20,7 +21,7 @@ const ProfileSideBySide = () => {
             <Experiences start={0} end={3} fontSize="11" designationFontSize="12" durationFontSize="11" />
           </div>
           <div className="w-[34%]">
-            <Skills fontSize="11" />
+            <Skills fontSize="11" start={0} end={skills.length-2} />
           </div>
         </div>
       </div>
@@ -32,7 +33,8 @@ const ProfileSideBySide = () => {
             <Activities />
             <Strengths />
           </div>
-          <div className="w-[34%]">
+          <div className="flex flex-col w-[34%] gap-1">
+            <Skills fontSize="11" start={skills.length-1} />
             <Projects projectsCount={10} />
           </div>
         </div>

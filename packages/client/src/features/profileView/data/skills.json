@@ -2,7 +2,7 @@
   {
     "skillGroupTitle": "Artificial Intelligence & Data Science",
     "skills": [
-      "AI & Machine Learning, Large Language Models (LLMs), Prompt Engineering, Retrieval-Augmented Generation (RAG)",
+      "AI & Machine Learning, Large Language Models (LLMs), Prompt Engineering, Retrieval-Augmented Generation (RAG), LangChain",
       "Python ecosystem: NumPy, Pandas, Matplotlib, BeautifulSoup, Jupyter Notebook"
     ]
   },
@@ -18,9 +18,9 @@
   {
     "skillGroupTitle": "Backend Development & Frameworks",
     "skills": [
-      "Node.js, Express, Mongoose, JWT", 
+      "Node.js, Express, Mongoose, JWT",
       "ASP.NET, MVC, .NET Core, Entity Framework, LINQ, Dependency Injection (DI)",
-      "Ruby & Ruby on Rails"
+      "Ruby on Rails"
     ]
   },
   {
@@ -28,7 +28,7 @@
     "skills": [
       "Python, JavaScript, TypeScript, Ruby, C#",
       "Object-Oriented Design (OOD), Design Patterns",
-      "Data Structures & Algorithms, Technical & System Analysis"
+      "Data Structures & Algorithms"
     ]
   },
   {
@@ -44,15 +44,16 @@
       "Relational DBs: MSSQL, PostgreSQL, MySQL",
       "NoSQL: MongoDB, DynamoDB (AWS exposure)",
       "ORMs: Prisma, Mongoose, Entity Framework",
-      "Cloud Platforms: AWS (Amplify, S3, Lambda, etc.), Azure, Azure Blob Storage",
+      "Cloud Platforms: AWS (VPC, EC2, Route 53, Amplify, S3, Lambda), Azure (Blob Storage)",
       "Containers & Orchestration: Docker, Kubernetes",
+      "Server Configuration & Reverse Proxy: Nginx, Certbot (SSL)",
       "Database Design & Optimization"
     ]
   },
   {
     "skillGroupTitle": "Software Architecture & Methodologies",
     "skills": [
-      "Microservices Architecture, Event-Driven Design",
+      "System Design, Technical & System Analysis, Microservices Architecture, Event-Driven Design",
       "RESTful & SOAP Service Design",
       "OOP, Advanced Design Patterns",
       "Agile/Scrum, Waterfall, Test-Driven Development (TDD)",
