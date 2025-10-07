@@ -2,6 +2,7 @@
   "name": "server",
   "type": "module",
   "scripts": {
+    "start": "node server.js",
     "dev": "bun --watch server.ts",
     "serve": "pm2 start server.ts --interpreter node"
   },
