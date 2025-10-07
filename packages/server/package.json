@@ -2,7 +2,8 @@
   "name": "server",
   "type": "module",
   "scripts": {
-    "dev": "bun --watch server.ts"
+    "dev": "bun --watch server.ts",
+    "serve": "pm2 start server.js --interpreter node"
   },
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
